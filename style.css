@@ -30,7 +30,7 @@ li {
   align-items: center;
 }
 
-.logo {
+.logo a {
   cursor: pointer;
   margin: 6px;
   font-size: 18px;
@@ -40,13 +40,17 @@ li {
   line-height: 20px;
 }
 
+.logo a:focus {
+  color: #6070ff;
+}
+
 .openMenu {
   font-size: 1.7rem;
   color: #6070ff;
 }
 
 .showcase {
-  background-image: url("./images/header-shapes-mobile.png");
+  background-image: url('./images/header-shapes-mobile.png');
   background-size: cover;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -76,10 +80,6 @@ li {
   margin: 10px 0;
   text-transform: uppercase;
   font-size: 19px;
-}
-
-.sub__presentation {
-  margin-top: -55px;
 }
 
 .showcase__presentation .social-media a {
