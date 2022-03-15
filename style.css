@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,11 +10,11 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .header {
@@ -60,7 +60,7 @@ li {
 
 .showcase h1 {
   padding-top: 30px;
-  font-size:30px;
+  font-size: 30px;
   width: 300px;
   line-height: 52px;
   font-weight: 700;
@@ -68,7 +68,7 @@ li {
 }
 
 .social-media {
-    display: flex;
+  display: flex;
 }
 
 .follow__link {
@@ -79,7 +79,7 @@ li {
 }
 
 .sub__presentation {
-    margin-top: -55px;
+  margin-top: -55px;
 }
 
 .showcase__presentation .social-media a {
