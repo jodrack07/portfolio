@@ -2,10 +2,16 @@
 
 # Project Name
 
-> Hello World
+> Personal Portfolio website
 
 ## Project Description
-Hello World is the entry point project in the Portal to let people get familiar with tools that will be used throught the whole cirriculum.  The tools include **Linters** with helps validating the codebase to make sure that the developer follow the coding standard related to a specific programming language.
+
+A portfolio is one of the most powerful tools in the software developer toolbox.
+It’s the easiest way of showing what you’re truly capable of as a developer, and is a quick and simple way for recruiters and hiring managers to get an idea of what a developer can bring to their teams.
+
+## Project screenshots
+
+![Screenshot](/images/screenshot-1.png 'Portofolio Mobile view')
 
 ## Built With
 
@@ -13,31 +19,36 @@ Hello World is the entry point project in the Portal to let people get familiar 
 - CSS
 - Linters
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://joseph07-drack.github.io/hello-world/)
-
+[Live Demo Link](https://joseph07-drack.github.io/portfolio/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 - Have a local version control like **git** install on your computer
 - Have an account on Github, as an online/remote Version Control System
+- Have some knowledge about Figma to adapt the design by following some specifications
 
 ### Setup
-- Clone the git repo by using this command : **git clone git@github.com:joseph07-drack/hello-world.git**
+
+- Clone the git repo by using this command : **git clone git@github.com:joseph07-drack/portfolio.git**
+
 ### Install
+
 - Run just **npm install** to get all dependecies required to run the linters checks
-### Usage
 
 ### Run tests
+
 - **npx hint .** : to test the html codes
-- **npx stylelint "**/*.{css,scss}"** : To test the css codes
+- **npx stylelint "**/\*.{css,scss}"\*\* : To test the css codes
 
 ### Deployment
-Github pages
+
+Github pages, refer the **Live demo** heading to see the page.
 
 ## Author
 
