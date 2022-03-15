@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  background: #fff;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  cursor: pointer;
+  margin: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  color: #6070ff;
+  line-height: 20px;
+}
+
+.logo a:focus {
+  color: #6070ff;
+}
+
+.openMenu {
+  font-size: 1.7rem;
+  color: #6070ff;
+}
+
+.showcase {
+  background-image: url('./images/header-shapes-mobile.png');
+  background-size: cover;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 80px;
+  padding: 20px;
+  height: 75vh;
+  width: 100vw;
+  margin-top: -15px;
+}
+
+.showcase h1 {
+  padding-top: 30px;
+  font-size: 30px;
+  width: 300px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.follow__link {
+  color: #6070ff;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 19px;
+}
+
+.showcase__presentation .social-media a {
+  margin-right: 10px;
+  width: 19.9px;
+  height: 19.9px;
+}
