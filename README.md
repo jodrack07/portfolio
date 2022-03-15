@@ -12,11 +12,12 @@ It’s the easiest way of showing what you’re truly capable of as a developer,
 ## Project screenshots
 
 ![Screenshot](/images/screenshot-1.png 'Portofolio Mobile view')
+![Screenshot](/images/screenshot-2.png 'Portofolio Mobile view works and about-me sections')
 
 ## Built With
 
 - HTML
-- CSS
+- CSS(Flexbox and Grid System)
 - Linters
 
 ## Live Demo
