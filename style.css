@@ -7,6 +7,7 @@
 body {
   background: #f5f5f5;
   font-family: Poppins, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -15,6 +16,13 @@ a {
 
 li {
   list-style: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .header {
@@ -57,7 +65,7 @@ li {
   background-position: center;
   border-bottom-left-radius: 80px;
   padding: 20px;
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   margin-top: -15px;
 }
@@ -89,10 +97,6 @@ li {
 }
 
 /* Works section */
-
-.all_works {
-  padding: 0 10px;
-}
 
 .works {
   display: grid;
@@ -174,9 +178,11 @@ li {
   width: 150px;
   font-size: 17px;
   line-height: 24px;
+  font-weight: 500;
   text-align: center;
+  letter-spacing: 0.03rem;
   outline: none;
-  padding: 8px;
+  padding: 10px;
   border-radius: 8px;
   color: #6070ff;
 }
@@ -198,26 +204,22 @@ li {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
-  height: 1000px;
+  height: 1050px;
   background: #fff;
   border-radius: 16px;
   margin: 50px auto;
   border-top-right-radius: 50px;
-  padding: 15px;
-}
-
-.prog-languages {
-  padding: 0 12px;
+  padding: 20px;
 }
 
 .about-me__title {
   width: 200px;
-  padding-bottom: 50px;
+  padding-top: 100px;
   height: 101px;
   font-size: 40px;
   line-height: 52px;
   font-weight: 700;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 125px 0;
 }
 
 .about-me__description p {
@@ -230,7 +232,8 @@ li {
 
 .medias {
   color: #6070ff;
-  margin-top: 40px;
+  font-size: 1.1rem;
+  margin-top: 20px;
   text-transform: uppercase;
 }
 
@@ -245,17 +248,44 @@ li {
 .about-me__tools {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  margin-top: -120px;
+  margin-top: 25px;
 }
 
 .tools {
+  margin-top: 30px;
+}
+
+.lang {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lang h3 {
+  margin-left: -60px;
+}
+
+.lang img {
+  margin-right: -18px;
+}
+
+.lang__stack {
+  margin: 15px auto;
+}
+
+.lang__stack img {
+  width: 100%;
+}
+
+.lang__tools {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-transform: capitalize;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfe1e6;
+  margin-bottom: 30px;
 }
 
-.frameworks,
-.skils {
-  border-bottom: 2px solid #dfe1e6;
+.lang__tools img {
+  margin-right: 42px;
 }
