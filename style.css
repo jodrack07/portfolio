@@ -156,6 +156,7 @@ li {
 }
 
 .work__lang * {
+  float: left;
   margin: 20px 10px 20px 0;
   background: #ebebff;
   color: #6070ff;
