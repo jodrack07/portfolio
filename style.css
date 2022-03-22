@@ -286,3 +286,12 @@ li {
 .lang__tools img {
   margin-right: 42px;
 }
+
+/*Contact-Form */
+.contact-form {
+  background-image: url('./images/contact-form-hapes.png');
+  background-color: #6070ff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 779px;
+}
