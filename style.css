@@ -300,7 +300,7 @@ li {
   border-top-left-radius: 50px;
   height: 779px;
   width: 100%;
-  padding: 16px;
+  padding: 18px;
   margin: 0 auto;
 }
 
@@ -312,7 +312,26 @@ li {
 
 .contact-form p {
   color: #ebebff;
-  margin: 10px 0;
+  margin: 10px 0 50px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.contact-btn {
+  font-family: inherit;
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: #6070ff;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .form-control {
