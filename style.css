@@ -155,11 +155,8 @@ li {
   border-radius: 50%;
 }
 
-.work__lang {
-  display: flex;
-}
-
 .work__lang * {
+  float: left;
   margin: 20px 10px 20px 0;
   background: #ebebff;
   color: #6070ff;
