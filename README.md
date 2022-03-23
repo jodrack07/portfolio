@@ -12,7 +12,8 @@ It’s the easiest way of showing what you’re truly capable of as a developer,
 ## Project screenshots
 
 ![Screenshot](/images/screenshot-1.png 'Portofolio Mobile view')
-![Screenshot](/images/screenshot-2.png 'Portofolio Mobile view works and about-me sections')
+![Screenshot](/images/screenshot-2.png 'Portofolio Mobile view works and about me sections')
+![Screenshot](/images/screenshot-3.png 'Portofolio Mobile view works and contact form section')
 
 ## Built With
 
@@ -30,6 +31,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- Have a working and updated browser.
 - Have a local version control like **git** install on your computer
 - Have an account on Github, as an online/remote Version Control System
 - Have some knowledge about Figma to adapt the design by following some specifications
@@ -51,12 +53,17 @@ To get a local copy up and running follow these simple example steps.
 
 Github pages, refer the **Live demo** heading to see the page.
 
-## Author
+## Authors
 
 👤 **Jodrack**
 
 - GitHub: [@githubhandle](https://github.com/joseph07-drack)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/joseph-buingo-ab2682225/)
+
+👤 **Chidinma**
+
+- GitHub: [@githubhandle](https://github.com/Dinma-Faith/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
 
 ## 🤝 Contributing
 
