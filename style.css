@@ -59,24 +59,23 @@ li {
 
 .showcase {
   background-image: url('./images/header-shapes-mobile.png');
-  background-size: cover;
+  background-size: 100%, 90%;
   background-color: #fff;
   background-repeat: no-repeat;
-  background-position: center;
-  border-bottom-left-radius: 80px;
+  border-bottom-left-radius: 100px;
   padding: 20px;
-  height: 80vh;
+  height: 96vh;
   width: 100vw;
   margin-top: -15px;
 }
 
 .showcase h1 {
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 40px;
   width: 300px;
   line-height: 52px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin: 62px 0 8px 0;
 }
 
 .social-media {
@@ -295,8 +294,9 @@ li {
   align-items: center;
   background-image: url('./images/contact-form-shape.png');
   background-color: #6070ff;
-  background-size: cover;
+  background-size: 52% 88%;
   background-repeat: no-repeat;
+  background-position: 100% 57px;
   border-top-left-radius: 80px;
   height: 779px;
   width: 100%;
