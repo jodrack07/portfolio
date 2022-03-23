@@ -297,7 +297,7 @@ li {
   background-color: #6070ff;
   background-size: cover;
   background-repeat: no-repeat;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 80px;
   height: 779px;
   width: 100%;
   padding: 18px;
@@ -328,6 +328,7 @@ li {
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 500;
+  padding: 15px;
 }
 
 .text-area {
