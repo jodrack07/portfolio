@@ -583,7 +583,7 @@ input.form-control::placeholder {
   .contact-form {
     display: flex;
     flex-direction: column;
-    background-image: url('/images/contact-form-desk-bg.png');
+    background-image: url('./images/contact-form-desk-bg.png');
     border-top-left-radius: 100px;
     background-size: 95% 89%;
     margin-top: -50px;
