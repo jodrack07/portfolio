@@ -18,7 +18,7 @@ It’s the easiest way of showing what you’re truly capable of as a developer,
 ## Built With
 
 - HTML
-- CSS(Flexbox and Grid System)
+- CSS(Flexbox and Grid System and Media Queries)
 - Linters
 
 ## Live Demo
