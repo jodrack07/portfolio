@@ -456,6 +456,21 @@ input.form-control::placeholder {
   .showcase__presentation h1 {
     width: 400px;
     margin-top: 27px;
+    animation: heading-animation 3s linear; 
+  }
+
+  @keyframes heading-animation {
+     from { 
+       width: 1000px; 
+       color: rgba(0, 0, 0, 0.5); 
+      } 
+      50% { 
+        width: 500px; 
+      } 
+      to { 
+        width: 400px; 
+        color: #000; 
+    } 
   }
 
   .showcase__presentation p {
