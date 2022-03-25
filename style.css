@@ -478,9 +478,11 @@ input.form-control::placeholder {
       width: 300px;
       color: rgba(0, 0, 0, 0.5);
     }
+
     50% {
       width: 500px;
     }
+
     to {
       width: 400px;
       color: #000;
