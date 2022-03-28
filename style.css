@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #f5f5f5;
   font-family: Poppins, sans-serif;
@@ -390,11 +394,6 @@ input.form-control::placeholder {
   font-size: 17px;
 }
 
-.contact-btn:hover {
-  color: #fff;
-  background: #6070ff;
-}
-
 .swipe-icon {
   background-color: #0d151e;
   width: 161px;
@@ -428,6 +427,25 @@ input.form-control::placeholder {
     color: #344563;
     font-size: 1rem;
     font-weight: 400;
+    position: relative;
+  }
+
+  nav .mainMenu li a::before {
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    margin-right: 150px;
+    background-color: #6070ff;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+  }
+
+  nav .mainMenu li a:hover::before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .navbar nav .openMenu {
@@ -456,6 +474,23 @@ input.form-control::placeholder {
   .showcase__presentation h1 {
     width: 400px;
     margin-top: 27px;
+    animation: heading-animation 3s linear;
+  }
+
+  @keyframes heading-animation {
+    from {
+      width: 300px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    50% {
+      width: 500px;
+    }
+
+    to {
+      width: 400px;
+      color: #000;
+    }
   }
 
   .showcase__presentation p {
