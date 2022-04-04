@@ -14,12 +14,14 @@ It’s the easiest way of showing what you’re truly capable of as a developer,
 ![Screenshot](/images/screenshot-1.png 'Portofolio Mobile view')
 ![Screenshot](/images/screenshot-2.png 'Portofolio Mobile view works and about me sections')
 ![Screenshot](/images/screenshot-3.png 'Portofolio Mobile view works and contact form section')
+![Screenshot](/images/screenshot-4.png 'Portofolio Mobile menu')
 
 ## Built With
 
 - HTML
 - CSS(Flexbox and Grid System and Media Queries)
-- Linters
+- Linters(hintrc, stylelint and eslint)
+- Javascript
 
 ## Live Demo
 
@@ -64,6 +66,10 @@ Github pages, refer the **Live demo** heading to see the page.
 
 - GitHub: [@githubhandle](https://github.com/Dinma-Faith/)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/chidinma-faith)
+
+👤 **Mavericks**
+
+- GitHub: [@githubhandle](https://github.com/mavericks-db)
 
 ## 🤝 Contributing
 

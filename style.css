@@ -51,6 +51,10 @@ li {
   margin-bottom: 15px;
 }
 
+.blur {
+  filter: blur(4.5px);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -70,37 +74,48 @@ li {
 
 nav .mainMenu li a {
   display: inline-block;
-  padding: 10px;
-  font-size: 1.8rem;
+  padding: 4px;
+  font-size: 1.5rem;
   color: var(--white-color);
-  font-weight: var(--fw-900);
-  margin-top: 10px;
+  font-weight: var(--fw-500);
+  margin: 10px 0 0 0;
 }
 
 .logo a:focus {
   color: var(--primary-color);
 }
 
-.openMenu {
-  font-size: 1.7rem;
-  color: var(--primary-color);
-}
-
-nav .mainMenu {
-  display: none;
-}
-
 nav .openMenu {
   display: block;
-  top: 20px;
+  top: 50px;
   right: 20px;
-  font-size: 2rem;
   color: var(--primary-color);
   margin-right: 5px;
 }
 
-.mainMenu .closeMenu {
+.mainMenu {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: top 1s ease;
+  background-color: var(--primary-color);
+  opacity: 0.9;
+  padding: 40px 0 0 20px;
+}
+
+nav .mainMenu .closeMenu {
+  position: absolute;
   display: block;
+  top: 20px;
+  right: 25px;
+  font-size: 1.5rem;
+  font-weight: var(--fw-400);
+  color: var(--white-color);
 }
 
 .showcase {
@@ -121,7 +136,7 @@ nav .openMenu {
   width: 300px;
   line-height: 52px;
   font-weight: var(--fw-700);
-  margin: 62px 0 8px 0;
+  margin: 58px 0 8px 0;
 }
 
 .social-media {
