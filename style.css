@@ -51,6 +51,10 @@ li {
   margin-bottom: 15px;
 }
 
+.blur {
+  filter: blur(4.5px);
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -70,11 +74,11 @@ li {
 
 nav .mainMenu li a {
   display: inline-block;
-  padding: 10px;
-  font-size: 1.8rem;
+  padding: 4px;
+  font-size: 1.5rem;
   color: var(--white-color);
-  font-weight: var(--fw-900);
-  margin-top: 10px;
+  font-weight: var(--fw-500);
+  margin: 10px 0 0 0;
 }
 
 .logo a:focus {
@@ -83,9 +87,8 @@ nav .mainMenu li a {
 
 nav .openMenu {
   display: block;
-  top: 20px;
+  top: 50px;
   right: 20px;
-  font-size: 2rem;
   color: var(--primary-color);
   margin-right: 5px;
 }
@@ -101,15 +104,17 @@ nav .openMenu {
   z-index: 2;
   transition: top 1s ease;
   background-color: var(--primary-color);
-  padding-top: 40px;
+  opacity: 0.9;
+  padding: 40px 0 0 20px;
 }
 
 nav .mainMenu .closeMenu {
   position: absolute;
   display: block;
   top: 20px;
-  right: 20px;
-  font-size: 2rem;
+  right: 25px;
+  font-size: 1.5rem;
+  font-weight: var(--fw-400);
   color: var(--white-color);
 }
 
@@ -131,7 +136,7 @@ nav .mainMenu .closeMenu {
   width: 300px;
   line-height: 52px;
   font-weight: var(--fw-700);
-  margin: 62px 0 8px 0;
+  margin: 58px 0 8px 0;
 }
 
 .social-media {
