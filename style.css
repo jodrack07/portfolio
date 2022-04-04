@@ -58,15 +58,6 @@ li {
   padding: 0 0;
 }
 
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 10px;
-  font-size: 1.8rem;
-  color: var(--white-color);
-  font-weight: var(--fw-900);
-  margin-top: 10px;
-}
-
 .logo a {
   cursor: pointer;
   margin: 6px;
@@ -75,6 +66,15 @@ nav .mainMenu li a {
   font-style: normal;
   color: var(--primary-color);
   line-height: 20px;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  font-weight: var(--fw-900);
+  margin-top: 10px;
 }
 
 .logo a:focus {
