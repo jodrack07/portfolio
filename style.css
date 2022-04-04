@@ -58,6 +58,15 @@ li {
   padding: 0 0;
 }
 
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.8rem;
+  color: var(--white-color);
+  font-weight: var(--fw-900);
+  margin-top: 10px;
+}
+
 .logo a {
   cursor: pointer;
   margin: 6px;
@@ -68,55 +77,8 @@ li {
   line-height: 20px;
 }
 
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 10px;
-  font-size: 1.8rem;
-  color: var(--white-color);
-  font-weight: var(--fw-900);
-  margin-top: 10px;
-}
-
 .logo a:focus {
   color: var(--primary-color);
-}
-
-.openMenu {
-  font-size: 1.7rem;
-  color: var(--primary-color);
-}
-
-nav .mainMenu {
-  display: none;
-  position: fixed;
-  flex-direction: column;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 2;
-  transition: top 1s ease;
-  background-color: var(--primary-color);
-  opacity: 0.9;
-  padding-top: 40px;
-}
-
-nav .mainMenu li a {
-  display: inline-block;
-  padding: 10px;
-  font-size: 1.8rem;
-  color: var(--white-color);
-  font-weight: var(--fw-900);
-  margin-top: 10px;
-}
-
-nav .mainMenu .closeMenu {
-  position: absolute;
-  display: block;
-  top: 20px;
-  right: 20px;
-  font-size: 2rem;
-  color: var(--white-color);
 }
 
 nav .openMenu {
@@ -128,8 +90,27 @@ nav .openMenu {
   margin-right: 5px;
 }
 
-.mainMenu .closeMenu {
+.mainMenu {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  transition: top 1s ease;
+  background-color: var(--primary-color);
+  padding-top: 40px;
+}
+
+nav .mainMenu .closeMenu {
+  position: absolute;
   display: block;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: var(--white-color);
 }
 
 .showcase {
