@@ -1,3 +1,18 @@
+:root {
+  --primary-color: #6070ff;
+  --bg-color: #f5f5f5;
+  --white-color: #fff;
+  --text-color-1: #172b4d;
+  --text-color-2: #7a869a;
+  --text-color-3: #344563;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +24,7 @@ html {
 }
 
 body {
-  background: #f5f5f5;
+  background: var(--bg-color);
   font-family: Poppins, sans-serif;
   overflow-x: hidden;
 }
@@ -30,7 +45,7 @@ li {
 }
 
 .header {
-  background: #fff;
+  background: var(--white-color);
   position: relative;
   padding: 10px;
   margin-bottom: 15px;
@@ -47,9 +62,9 @@ li {
   cursor: pointer;
   margin: 6px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   font-style: normal;
-  color: #6070ff;
+  color: var(--primary-color);
   line-height: 20px;
 }
 
@@ -57,18 +72,18 @@ nav .mainMenu li a {
   display: inline-block;
   padding: 10px;
   font-size: 1.8rem;
-  color: #fff;
-  font-weight: 900;
+  color: var(--white-color);
+  font-weight: var(--fw-900);
   margin-top: 10px;
 }
 
 .logo a:focus {
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 .openMenu {
   font-size: 1.7rem;
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 nav .mainMenu {
@@ -80,14 +95,18 @@ nav .openMenu {
   top: 20px;
   right: 20px;
   font-size: 2rem;
-  color: #6070ff;
+  color: var(--primary-color);
   margin-right: 5px;
+}
+
+.mainMenu .closeMenu {
+  display: block;
 }
 
 .showcase {
   background-image: url('./images/header-shapes-mobile.png');
   background-size: 100%, 90%;
-  background-color: #fff;
+  background-color: var(--white-color);
   background-repeat: no-repeat;
   border-bottom-left-radius: 100px;
   padding: 20px;
@@ -101,7 +120,7 @@ nav .openMenu {
   font-size: 40px;
   width: 300px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin: 62px 0 8px 0;
 }
 
@@ -110,7 +129,7 @@ nav .openMenu {
 }
 
 .follow__link {
-  color: #6070ff;
+  color: var(--primary-color);
   margin: 10px 0;
   text-transform: uppercase;
   font-size: 19px;
@@ -130,7 +149,7 @@ nav .openMenu {
   width: 327px;
   height: 600px;
   padding: 16px;
-  background: #fff;
+  background: var(--white-color);
   margin: 50px auto;
   border-radius: 8px;
 }
@@ -147,14 +166,14 @@ nav .openMenu {
 
 .work__description .long_desc {
   font-size: 0.85rem;
-  font-weight: 400;
+  font-weight: var(--fw-400);
 }
 
 .work__description > h2 {
   width: 290px;
   font-size: 25px;
-  font-weight: 700;
-  color: #172b4d;
+  font-weight: var(--fw-700);
+  color: var(--text-color-1);
 }
 
 .short_desc {
@@ -169,13 +188,13 @@ nav .openMenu {
 
 .short_desc h4 {
   font-size: 13px;
-  font-weight: 600;
+  font-weight: var(--fw-600);
   line-height: 16px;
-  color: #7a869a;
+  color: var(--text-color-2);
 }
 
 .short_desc h4:nth-child(1) {
-  color: #344563;
+  color: var(--text-color-3);
   text-transform: uppercase;
 }
 
@@ -190,8 +209,8 @@ nav .openMenu {
   float: left;
   margin: 20px 10px 20px 0;
   background: #ebebff;
-  color: #6070ff;
-  font-weight: 500;
+  color: var(--primary-color);
+  font-weight: var(--fw-500);
   border-radius: 7px;
   padding: 5px;
 }
@@ -212,18 +231,18 @@ nav .openMenu {
   outline: none;
   padding: 10px;
   border-radius: 8px;
-  color: #6070ff;
+  color: var(--primary-color);
 }
 
 .btn:hover {
-  color: #fff;
-  background-color: #6070ff;
+  color: var(--white-color);
+  background-color: var(--primary-color);
   transform: rotate(1deg);
 }
 
 .btn-enabled {
-  background-color: #fff;
-  border: 1px solid #7f8cff;
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
 }
 
 /* About section */
@@ -233,7 +252,7 @@ nav .openMenu {
   grid-template-columns: repeat(1, 1fr);
   width: 100%;
   height: 1050px;
-  background: #fff;
+  background: var(--white-color);
   border-radius: 16px;
   margin: 50px auto;
   border-top-right-radius: 50px;
@@ -246,20 +265,20 @@ nav .openMenu {
   height: 101px;
   font-size: 40px;
   line-height: 52px;
-  font-weight: 700;
+  font-weight: var(--fw-700);
   margin: 20px 0 125px 0;
 }
 
 .about-me__description p {
-  color: #344563;
+  color: var(--text-color-3);
   line-height: 24px;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: var(--fw-400);
   margin-bottom: 15px;
 }
 
 .medias {
-  color: #6070ff;
+  color: var(--primary-color);
   font-size: 1.1rem;
   margin-top: 20px;
   text-transform: uppercase;
@@ -329,7 +348,7 @@ nav .openMenu {
   flex-direction: column;
   align-items: center;
   background-image: url('./images/contact-form-shape.png');
-  background-color: #6070ff;
+  background-color: var(--primary-color);
   background-size: 52% 88%;
   background-repeat: no-repeat;
   background-position: 100% 57px;
@@ -342,7 +361,7 @@ nav .openMenu {
 
 .contact-form h2 {
   font-size: 35px;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   margin-top: 120px;
 }
@@ -350,7 +369,7 @@ nav .openMenu {
 .contact-form p {
   color: #ebebff;
   margin: 11px 0 35px 0;
-  font-weight: 400;
+  font-weight: var(--fw-400);
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -363,7 +382,7 @@ nav .openMenu {
   border: solid 1px #cfd8dc;
   margin-bottom: 10px;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: var(--fw-500);
   padding: 15px;
 }
 
@@ -376,7 +395,7 @@ nav .openMenu {
 }
 
 input.form-control::placeholder {
-  color: #172b4d;
+  color: var(--text-color-1);
 }
 
 .contact-btn {
@@ -385,12 +404,12 @@ input.form-control::placeholder {
   padding: 12px 16px;
   width: 140px;
   height: 48px;
-  background: #fff;
+  background: var(--white-color);
   border: none;
   outline: none;
   border-radius: 8px;
-  color: #6070ff;
-  font-weight: 500;
+  color: var(--primary-color);
+  font-weight: var(--fw-500);
   font-size: 17px;
 }
 
@@ -420,13 +439,13 @@ input.form-control::placeholder {
     flex-direction: row;
     height: auto;
     padding-top: 0;
-    background-color: #fff;
+    background-color: var(--white-color);
   }
 
   nav .mainMenu li a {
-    color: #344563;
+    color: var(--text-color-1);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: var(--fw-400);
     position: relative;
   }
 
@@ -437,7 +456,7 @@ input.form-control::placeholder {
     bottom: 0;
     left: 0;
     margin-right: 150px;
-    background-color: #6070ff;
+    background-color: var(--primary-color);
     position: absolute;
     transition: all 0.4s ease-in-out;
   }
@@ -494,7 +513,7 @@ input.form-control::placeholder {
   }
 
   .showcase__presentation p {
-    color: #344563;
+    color: var(--text-color-3);
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -530,7 +549,7 @@ input.form-control::placeholder {
 
   .work__description p {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: var(--fw-400);
   }
 
   .work__description > h2 {
@@ -626,7 +645,7 @@ input.form-control::placeholder {
   }
 
   .contact-form p {
-    color: #fff;
+    color: var(--white-color);
     font-size: 24px;
     line-height: 30px;
     text-align: center;
@@ -650,7 +669,7 @@ input.form-control::placeholder {
 
   .contact-btn {
     padding: 15px;
-    font-weight: 600;
+    font-weight: var(--fw-600);
   }
 
   .form-control {
