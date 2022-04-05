@@ -83,3 +83,38 @@ function generateProjectContent() {
     </article>`;
   }
 }
+
+// showing the popup window once a button get clicked
+function toggleProjectPopWindow() {
+  for (let i = 0; i < data.length; i += 1) {
+    let languages = '';
+    data[i].technologies.forEach((language) => {
+      languages += `
+      <li>${language}</li>
+    `;
+    });
+    document
+      .querySelector(`.project-modal-${i}`)
+      .addEventListener('click', () => {
+        project.innerHTML = data[i].projectName;
+        imageLink.src = data[i].imageLink;
+        role.innerHTML = data[i].role;
+        company.innerHTML = data[i].company;
+        year.innerHTML = data[i].year;
+        project__lang.innerHTML = languages;
+
+        document.querySelector('.all_works').classList.add('blur');
+        document.querySelector('.header').classList.add('blur');
+        document.querySelector('.showcase').classList.add('blur');
+        document.querySelector('.contact-form').classList.add('blur');
+        document.querySelector('.about-me').classList.add('blur');
+        modalContainer.classList.add('show');
+      });
+  }
+  document.querySelector('.closeModal').addEventListener('click', () => {
+    modalContainer.style.display = 'none';
+    window.location.reload();
+    document.querySelector('.header').classList.remove('blur');
+    document.querySelector('.showcase').classList.remove('blur');
+  });
+}
