@@ -455,64 +455,78 @@ input.form-control::placeholder {
   bottom: 10px;
   object-fit: contain;
 }
+
 @keyframes smoth-effet-open {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 .modal .short_desc {
   display: flex;
   align-items: center;
   margin: 3px 0;
 }
+
 .modelContainer.show {
   display: flex;
   z-index: 100;
 }
+
 .closeModal {
   animation: smoth-effet-close 0.7s;
 }
+
 @keyframes smoth-effet-close {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 .modal__headMain {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: -15px 0 -12px 0;
 }
+
 .modal__headMain h1 {
   font-weight: var(--fw-600);
   margin-bottom: -30px;
   font-size: 1rem;
 }
+
 .modelContainer .desc {
   display: none;
 }
+
 .modal__headMain .closeModal {
   font-size: 2rem;
-  color: #67798E;
+  color: #67798e;
   border: none;
   outline: none;
   background: none;
   padding: 15px;
 }
+
 .see-project-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .project__lang {
   display: flex;
 }
+
 .modelContainer .project__lang * {
   margin: 5px 5px 12px 0;
   background: var(--text-color-4);
@@ -522,6 +536,7 @@ input.form-control::placeholder {
   border-radius: 15px;
   padding: 1px;
 }
+
 .modal-btn {
   font-size: 17px;
   line-height: 24px;
@@ -537,17 +552,20 @@ input.form-control::placeholder {
   margin-top: 0;
   margin-left: -16px;
 }
+
 .modal-btn i {
   font-size: 20px;
   color: var(--primary-color);
   font-weight: 600;
 }
+
 .modal__body img {
   width: 100%;
   height: 90%;
 }
+
 .modal__body p {
-  color: #1D3050;
+  color: #1d3050;
   font-size: 13px;
   font-weight: var(--fw-500);
 }
@@ -819,25 +837,31 @@ input.form-control::placeholder {
     overflow: hidden;
     padding-bottom: 100px;
   }
+
   .modelContainer .description {
     display: none;
   }
+
   .modelContainer p {
     font-size: 14px;
     font-weight: var(--fw-600);
   }
+
   .modelContainer .desc {
     display: block;
     max-width: 650px;
   }
+
   .image-container {
     margin: 0 0 10px 0;
     height: 450px;
   }
+
   .image-container img {
     width: 100%;
     height: 100%;
   }
+
   .see-project-buttons {
     margin-left: 20px;
     display: flex;
@@ -847,6 +871,7 @@ input.form-control::placeholder {
     width: 260px;
     margin-top: 20px;
   }
+
   .modelContainer .project-desc {
     display: flex;
     justify-content: space-between;
