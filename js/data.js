@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     projectName: 'Tonic',
     projectDescription:
@@ -48,3 +48,5 @@ export const data = [
     demoLink: 'https://joseph07-drack.github.io/Portofolio/',
   },
 ];
+
+export default data;

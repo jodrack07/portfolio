@@ -1,3 +1,5 @@
+import data from './data';
+
 const mainMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.openMenu');
 const closeMenu = document.querySelector('.closeMenu');
@@ -37,15 +39,15 @@ const project = document.querySelector('.name');
 const company = document.querySelector('.company');
 const role = document.querySelector('.role');
 const year = document.querySelector('.year');
-const project__lang = document.querySelector('.project__lang');
+const projectLang = document.querySelector('.project__lang');
 const imageLink = document.querySelector('.image');
 const modalContainer = document.querySelector('.modelContainer');
-const all_works = document.querySelector('.all_works');
+const allWorks = document.querySelector('.all_works');
 // const project_description = document.querySelector('.description');
 
 // generating content dynamically from the object
 function generateProjectContent() {
-  all_works.innerHTML = '';
+  allWorks.innerHTML = '';
   for (let i = 0; i < data.length; i += 1) {
     let languages = '';
     data[i].technologies.forEach((language) => {
@@ -54,7 +56,7 @@ function generateProjectContent() {
     `;
     });
 
-    all_works.innerHTML += `
+    allWorks.innerHTML += `
     <article class='works'>
       <div class='works__image'>
         <img src='${data[i].imageLink}' alt='work ${i}' class='img1' />
@@ -101,7 +103,7 @@ function toggleProjectPopWindow() {
         role.innerHTML = data[i].role;
         company.innerHTML = data[i].company;
         year.innerHTML = data[i].year;
-        project__lang.innerHTML = languages;
+        projectLang.innerHTML = languages;
 
         document.querySelector('.all_works').classList.add('blur');
         document.querySelector('.header').classList.add('blur');
