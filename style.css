@@ -810,4 +810,45 @@ input.form-control::placeholder {
   .swipe-icon {
     display: none;
   }
+
+  /* popup window styles */
+  .modelContainer {
+    width: 50%;
+    margin: 35px auto 10px auto;
+    height: 720px;
+    overflow: hidden;
+    padding-bottom: 100px;
+  }
+  .modelContainer .description {
+    display: none;
+  }
+  .modelContainer p {
+    font-size: 14px;
+    font-weight: var(--fw-600);
+  }
+  .modelContainer .desc {
+    display: block;
+    max-width: 650px;
+  }
+  .image-container {
+    margin: 0 0 10px 0;
+    height: 450px;
+  }
+  .image-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .see-project-buttons {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    width: 260px;
+    margin-top: 20px;
+  }
+  .modelContainer .project-desc {
+    display: flex;
+    justify-content: space-between;
+  }
 }
