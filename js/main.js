@@ -1,4 +1,4 @@
-import data from './data';
+import data from './data.js';
 
 const mainMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.openMenu');
@@ -43,7 +43,6 @@ const projectLang = document.querySelector('.project__lang');
 const imageLink = document.querySelector('.image');
 const modalContainer = document.querySelector('.modelContainer');
 const allWorks = document.querySelector('.all_works');
-// const project_description = document.querySelector('.description');
 
 // generating content dynamically from the object
 function generateProjectContent() {
@@ -56,8 +55,10 @@ function generateProjectContent() {
     `;
     });
 
+    const cardOrderReversed = i % 2 !== 0 ? 'works-col-2-1' : '';
+
     allWorks.innerHTML += `
-    <article class='works'>
+    <article class='works ${cardOrderReversed}'>
       <div class='works__image'>
         <img src='${data[i].imageLink}' alt='work ${i}' class='img1' />
       </div>
