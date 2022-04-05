@@ -118,3 +118,6 @@ function toggleProjectPopWindow() {
     document.querySelector('.showcase').classList.remove('blur');
   });
 }
+
+generateProjectContent();
+toggleProjectPopWindow();
