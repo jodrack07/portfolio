@@ -469,7 +469,7 @@ input.form-control::placeholder {
 .modal .short_desc {
   display: flex;
   align-items: center;
-  margin: 3px 0;
+  margin: 8px 0;
 }
 
 .modelContainer.show {
@@ -528,8 +528,8 @@ input.form-control::placeholder {
 }
 
 .modelContainer .project__lang * {
-  margin: 5px 5px 12px 0;
-  background: var(--text-color-4);
+  margin: 5px 10px 12px 0;
+  background: #ebebff;
   font-size: 14px;
   color: var(--primary-color);
   font-weight: var(--fw-400);
@@ -550,7 +550,7 @@ input.form-control::placeholder {
   font-weight: var(--fw-600);
   margin-right: 5px;
   margin-top: 0;
-  margin-left: -16px;
+  margin-left: -4px;
 }
 
 .modal-btn i {
@@ -568,6 +568,10 @@ input.form-control::placeholder {
   color: #1d3050;
   font-size: 13px;
   font-weight: var(--fw-500);
+}
+
+hr {
+  margin-bottom: 8px;
 }
 
 /* DESKTOP VIEW */
@@ -875,5 +879,9 @@ input.form-control::placeholder {
   .modelContainer .project-desc {
     display: flex;
     justify-content: space-between;
+  }
+
+  hr {
+    display: none;
   }
 }
