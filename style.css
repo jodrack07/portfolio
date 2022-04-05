@@ -553,6 +553,10 @@ input.form-control::placeholder {
   margin-left: -4px;
 }
 
+.modal-btn:first-child {
+  width: 125px;
+}
+
 .modal-btn i {
   font-size: 20px;
   color: var(--primary-color);
