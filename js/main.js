@@ -31,3 +31,55 @@ document.querySelectorAll('.link').forEach((link) => {
 
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
+
+// Popup windows for Projects viewing
+const project = document.querySelector('.name');
+const company = document.querySelector('.company');
+const role = document.querySelector('.role');
+const year = document.querySelector('.year');
+const project__lang = document.querySelector('.project__lang');
+const imageLink = document.querySelector('.image');
+const modalContainer = document.querySelector('.modelContainer');
+const all_works = document.querySelector('.all_works');
+// const project_description = document.querySelector('.description');
+
+// generating content dynamically from the object
+function generateProjectContent() {
+  all_works.innerHTML = '';
+  for (let i = 0; i < data.length; i += 1) {
+    let languages = '';
+    data[i].technologies.forEach((language) => {
+      languages += `
+      <li>${language}</li>
+    `;
+    });
+
+    all_works.innerHTML += `
+    <article class='works'>
+      <div class='works__image'>
+        <img src='${data[i].imageLink}' alt='work ${i}' class='img1' />
+      </div>
+      <div class='work__description'>
+        <h2>${data[i].projectName}</h2>
+        <div class='short_desc'>
+          <h4>${data[i].company}</h4>
+          <span></span>
+          <h4>${data[i].role}</h4>
+          <span></span>
+          <p>${data[i].year}</p>
+        </div>
+        <div class='long_desc'>
+          <p>
+            ${data[i].projectDescription}
+          </p>
+          <ul class='work__lang'>
+            ${languages}
+          </ul>
+        </div>
+        <button type='button' class='btn btn-enabled project-modal-${i}'>
+          See project
+        </button>
+      </div>
+    </article>`;
+  }
+}
