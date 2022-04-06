@@ -168,9 +168,28 @@ function toggleProjectPopWindow() {
   });
 }
 
+// Form validation
+const email = document.querySelector('#email');
+const validationAlert = document.querySelector('.alert');
+const contactForm = document.querySelector('.form-group');
+
+function formValidation() {
+  contactForm.addEventListener('submit', (event) => {
+    const regex = /[A-Z]/;
+    const emailContent = email.value;
+    if (regex.test(emailContent)) {
+      validationAlert.innerHTML =
+        'Your email address should not contain uppercase letters';
+      event.preventDefault();
+    }
+  });
+}
+
 // invoking all functions in one place
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
 
 generateProjectContent();
 toggleProjectPopWindow();
+
+formValidation();
