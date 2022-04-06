@@ -368,7 +368,7 @@ nav .mainMenu .closeMenu {
   background-repeat: no-repeat;
   background-position: 100% 57px;
   border-top-left-radius: 80px;
-  height: 779px;
+  height: 785px;
   width: 100%;
   padding: 18px;
   margin: 20px auto 0 auto;
@@ -435,6 +435,15 @@ input.form-control::placeholder {
   display: block;
   border-radius: 30px;
   margin: 15px auto 0 auto;
+}
+
+.validatonAlert {
+  display: block;
+  color: red;
+  width: 100%;
+  font-size: 14px;
+  margin: -10px 0 5px 0;
+  text-align: center;
 }
 
 /* Mobile Modals windows */
@@ -835,6 +844,10 @@ hr {
 
   .swipe-icon {
     display: none;
+  }
+
+  .validatonAlert {
+    font-size: 1rem;
   }
 
   /* popup window styles */
