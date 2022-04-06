@@ -184,6 +184,19 @@ function formValidation() {
   });
 }
 
+function populateLocalStorage() {
+  contactForm.addEventListener('input', () => {
+    // add information in the local storage
+    const userData = {
+      name: nameField.value,
+      emailAddress: emailAddressField.value,
+      message: messageField.value,
+    };
+    // store information in the local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
+
 // invoking all functions in one place
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
@@ -192,3 +205,5 @@ generateProjectContent();
 toggleProjectPopWindow();
 
 formValidation();
+
+populateLocalStorage();
