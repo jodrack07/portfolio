@@ -184,6 +184,11 @@ function formValidation() {
   });
 }
 
+// local storage
+const nameField = document.querySelector('#name');
+const emailAddressField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+
 function populateLocalStorage() {
   contactForm.addEventListener('input', () => {
     // add information in the local storage
@@ -197,6 +202,15 @@ function populateLocalStorage() {
   });
 }
 
+function getDataFromLocalStorage() {
+  const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+
+  // displaying information from the local storage
+  nameField.value = userDataFromLocalStorage.name;
+  emailAddressField.value = userDataFromLocalStorage.emailAddress;
+  messageField.value = userDataFromLocalStorage.message;
+}
+
 // invoking all functions in one place
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
@@ -207,3 +221,4 @@ toggleProjectPopWindow();
 formValidation();
 
 populateLocalStorage();
+getDataFromLocalStorage();
