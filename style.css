@@ -437,6 +437,15 @@ input.form-control::placeholder {
   margin: 15px auto 0 auto;
 }
 
+.validatonAlert {
+  display: block;
+  color: red;
+  width: 100%;
+  font-size: 14px;
+  margin: -10px 0 5px 0;
+  text-align: center;
+}
+
 /* Mobile Modals windows */
 .modelContainer {
   display: none;
@@ -835,6 +844,10 @@ hr {
 
   .swipe-icon {
     display: none;
+  }
+
+  .validatonAlert {
+    font-size: 1rem;
   }
 
   /* popup window styles */
