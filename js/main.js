@@ -184,6 +184,33 @@ function formValidation() {
   });
 }
 
+// local storage
+const nameField = document.querySelector('#name');
+const emailAddressField = document.querySelector('#email');
+const messageField = document.querySelector('#message');
+
+function populateLocalStorage() {
+  contactForm.addEventListener('input', () => {
+    // add information in the local storage
+    const userData = {
+      name: nameField.value,
+      emailAddress: emailAddressField.value,
+      message: messageField.value,
+    };
+    // store information in the local storage
+    localStorage.setItem('userData', JSON.stringify(userData));
+  });
+}
+
+function getDataFromLocalStorage() {
+  const userDataFromLocalStorage = JSON.parse(localStorage.getItem('userData'));
+
+  // displaying information from the local storage
+  nameField.value = userDataFromLocalStorage.name;
+  emailAddressField.value = userDataFromLocalStorage.emailAddress;
+  messageField.value = userDataFromLocalStorage.message;
+}
+
 // invoking all functions in one place
 openMenu.addEventListener('click', openMobileMenu);
 closeMenu.addEventListener('click', closeMobileMenu);
@@ -192,3 +219,6 @@ generateProjectContent();
 toggleProjectPopWindow();
 
 formValidation();
+
+populateLocalStorage();
+getDataFromLocalStorage();
