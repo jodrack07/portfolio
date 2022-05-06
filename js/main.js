@@ -178,8 +178,7 @@ function formValidation() {
     const regex = /[A-Z]/;
     const emailContent = email.value;
     if (regex.test(emailContent)) {
-      validationAlert.innerHTML =
-        'Your email address should not contain uppercase letters';
+      validationAlert.innerHTML = 'Your email address should not contain uppercase letters';
       event.preventDefault();
     }
   });
