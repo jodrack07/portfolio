@@ -1,15 +1,15 @@
 const data = [
   {
-    projectName: 'Tonic',
+    projectName: 'Capstone-1',
     projectDescription:
-      'A daily selection of privately personalized reads; no accountsor sign-ups required.',
-    imageLink: 'images/Snapshoot-Portfolio1.png',
+      'A conferencing web Application that showcase the Company Overview, the list of the speakers for the next event and list 2 previous events.',
+    imageLink: 'images/capstone1.png',
     technologies: ['html', 'css', 'javascript'],
-    role: 'Back end Dev',
-    company: 'canopi',
-    year: '2015',
-    sourceLink: 'https://github.com/joseph07-drack/Portofolio/',
-    demoLink: 'https://joseph07-drack.github.io/Portofolio/',
+    role: 'Fontend Dev',
+    company: 'Microverse',
+    year: '2022',
+    sourceLink: 'https://github.com/joseph07-drack/module-1-capstone/',
+    demoLink: 'https://joseph07-drack.github.io/module-1-capstone/',
   },
   {
     projectName: 'Multi-post stories',
